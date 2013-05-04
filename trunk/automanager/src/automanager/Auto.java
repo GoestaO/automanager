@@ -6,6 +6,7 @@ public class Auto implements Serializable{
 	private String hersteller;
 	private int leistung;
 	private int anzahlTueren;
+	private boolean hatAnhaengerkupplung;
 	
 	//Getter
 	public String getHersteller() {
@@ -43,6 +44,14 @@ public class Auto implements Serializable{
 		this.hersteller = hersteller;
 		this.leistung = leistung;
 		this.anzahlTueren = anzahlTueren;
+	}
+
+	public boolean getHatAnhaengerkupplung() {
+		return hatAnhaengerkupplung;
+	}
+
+	public void setHatAnhaengerkupplung(boolean hatAnhaengerkupplung) {
+		this.hatAnhaengerkupplung = hatAnhaengerkupplung;
 	}
 
 	
