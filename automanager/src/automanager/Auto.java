@@ -21,6 +21,9 @@ public class Auto implements Serializable{
 		return anzahlTueren;
 	}
 	
+	public boolean getHatAnhaengerkupplung() {
+		return hatAnhaengerkupplung;
+	}
 	
 	//Setter	
 	public void setHersteller(String hersteller) {
@@ -35,25 +38,25 @@ public class Auto implements Serializable{
 		this.anzahlTueren = anzahlTueren;
 	}
 	
+	public void setHatAnhaengerkupplung(boolean hatAnhaengerkupplung) {
+		this.hatAnhaengerkupplung = hatAnhaengerkupplung;
+	}
+
 	// Tuning-Methode
 	public void tunen(int tuneWert) {
 		this.leistung = this.leistung + tuneWert;
 	}
 	
-	public Auto(String hersteller, int leistung, int anzahlTueren) {
+	public Auto(String hersteller, int leistung, int anzahlTueren, boolean hatAnhaengerkupplung) {
 		this.hersteller = hersteller;
 		this.leistung = leistung;
 		this.anzahlTueren = anzahlTueren;
-	}
-
-	public boolean getHatAnhaengerkupplung() {
-		return hatAnhaengerkupplung;
-	}
-
-	public void setHatAnhaengerkupplung(boolean hatAnhaengerkupplung) {
 		this.hatAnhaengerkupplung = hatAnhaengerkupplung;
 	}
 
+	
+
+	
 	
 
 	
