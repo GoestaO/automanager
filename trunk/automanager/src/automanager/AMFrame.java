@@ -37,6 +37,7 @@ public class AMFrame extends JFrame {
 	private JPanel pnlLeft, pnlAdd, pnlLoadSave;
 	private Autobestand model;
 	private JButton btnSave, btnLoad;
+	private JRabiobutton rbyes, rbno;
 
 	public AMFrame(Autobestand model) {
 		this.model = model;

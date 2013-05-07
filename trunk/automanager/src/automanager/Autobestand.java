@@ -30,6 +30,8 @@ public class Autobestand extends ArrayList<Auto> implements TableModel, Serializ
 			return Integer.class;
 		case 2:
 			return Integer.class;
+		case 3: 
+			return Boolean.class;
 		default:
 			return null;
 		}
@@ -48,7 +50,9 @@ public class Autobestand extends ArrayList<Auto> implements TableModel, Serializ
 		case 1:
 			return "Leistung";
 		case 2:
-			return "Anzahl TÃ¼ren";
+			return "Anzahl Türen";
+		case 3:
+			return "Anhängerkupplung";
 		default:
 			return null;
 		}
@@ -69,6 +73,8 @@ public class Autobestand extends ArrayList<Auto> implements TableModel, Serializ
 			return a.getLeistung();
 		case 2:
 			return a.getAnzahlTueren();
+		case 3:
+			return a.getHatAnhaengerkupplung();
 		default:
 			return null;
 		}
